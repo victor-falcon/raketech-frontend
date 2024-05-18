@@ -1,9 +1,24 @@
-# Vue 3 + TypeScript + Vite
+![screenshot.png](assets/screenshot.png)
+ 
+- Author: Víctor Falcón <victoor89@gmail.com>
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## How to Execute
 
-## Recommended Setup
+You need to install dependencies and run de project:
+```
+npm run install
+npm run dev
+```
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
+## About the test
 
-- Use [vue-tsc](https://github.com/vuejs/language-tools/tree/master/packages/tsc) for performing the same type checking from the command line, or for generating d.ts files for SFCs.
+- To keep things simple, I'm not using any router or similar. Also didn't install prettier or eslint even though it would be a good idea.
+- All the config related with Auth0 and the API path is inside .env file. If your local API is not under `http://localhost/api` you need to change it there.
+- To log in there is a test user
+  - Email: victoor89@gmail.com
+  - Password: \`Giraffe#LemonTree88\` (with ` before and after)
+- The project structure is super simple.
+  - All components are under `src/components` by folder.
+  - And everything related with API is under `src/api`.
+- I did not set up any import alias, but it could be a good practice.
+- I also implemented dark mode and mobile views. 
