@@ -11,7 +11,7 @@ const user = ref(auth0.user);
 </script>
 
 <template>
-    <div class="w-full flex flex-row items-center justify-between px-6 py-5 border-b border-zinc-200">
+    <div class="w-full flex flex-row items-center justify-between px-6 py-5 border-b border-zinc-200 dark:border-zinc-700">
         <h1>🤟 App Name</h1>
 
         <div :class="[
