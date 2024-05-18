@@ -20,7 +20,7 @@ export function useFetch<T, K>({path, processResponse}: UseFetchRequest<T, K>): 
     data: [],
   })
 
-  fetch(`http://localhost/api/${path}`)
+  fetch(`${import.meta.env.VITE_API_BASE_PATH}/${path}`)
     .then(res => res.json())
     .then(result => {
       Object.assign(data, {
